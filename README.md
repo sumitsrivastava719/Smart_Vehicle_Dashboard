@@ -55,6 +55,16 @@ The system follows a **dual-MCU architecture** for modularity, speed, and reliab
 
 ---
 
+
+## ⚡ Circuit Diagram
+
+<p align="center">
+<img width="700" height="659" alt="image" src="https://github.com/user-attachments/assets/fd98a25a-d4cc-4a0c-a3d2-f3824df71d11" />
+</p>
+
+
+---
+
 ## 🖧 Communication & Interfaces
 
 ### **CAN Bus (STM32 ↔ ESP32)**
@@ -96,6 +106,13 @@ Used for high-reliability inter-controller communication.
 ---
 
 ## 🔄 System Workflow
+
+
+<p align="center">
+<img width="185" height="344" alt="image" src="https://github.com/user-attachments/assets/bf844903-534c-4dd8-b3c3-480a54b9d2bc" />
+
+</p>
+
 
 1. **STM32 reads sensors using FreeRTOS tasks**  
 2. **STM32 packs data → sends via CAN to ESP32**  
@@ -157,7 +174,7 @@ This project demonstrates a fully functional automotive-style dashboard that int
 It forms a strong base for future upgrades such as touch UI, OBD-II integration, battery monitoring, or predictive maintenance.
 
 ---
-
+## Link
 - 🐙 [GitHub](https://github.com/sumitsrivastava719)
 - 🔗 [Linkedin](https://www.linkedin.com/in/-sumitsrivastava-/) 
 
