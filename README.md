@@ -158,7 +158,6 @@ It forms a strong base for future upgrades such as touch UI, OBD-II integration,
 
 ---
 
-## 🔗 Links
-- 🐙 **GitHub:** https://github.com/sumitsrivastava719  
-- 💼 **LinkedIn:** https://www.linkedin.com/in/-sumitsrivastava-/  
+- 🐙 [GitHub](https://github.com/sumitsrivastava719)
+- 🔗 [Linkedin](https://www.linkedin.com/in/-sumitsrivastava-/) 
 
