@@ -1,10 +1,10 @@
-Smart Vehicle Dashboard using CAN Bus & IoT
+# Smart Vehicle Dashboard
+
 A Dual-Microcontroller Real-Time Automotive Monitoring System
 
 This project implements a smart vehicle dashboard capable of acquiring, transmitting, visualizing, and remotely monitoring real-time vehicle and environmental parameters. It uses STM32F407VGT6, ESP32, CAN bus, and FreeRTOS, along with multiple sensors to replicate the workflow of a modern automotive dashboard.
 
 🔧 System Overview
-
 The system follows a dual-MCU architecture for modularity and reliability:
 
 1. STM32F407VGT6 (Primary Controller)
@@ -161,5 +161,10 @@ SSD1306 OLED Display (128×64)
 
 This project demonstrates a complete working automotive-style dashboard integrating multi-sensor data acquisition, CAN-based inter-MCU communication, real-time FreeRTOS scheduling, local OLED visualization, and cloud-based IoT monitoring.
 It provides a strong foundation for future upgrades such as touch-based UI, OBD-II integration, battery health monitoring, or predictive maintenance.
+## Links
 
+
+
+- 🐙 [GitHub Repository](https://github.com/sumitsrivastava719/Smart_Vehicle_Dashboard)
+- 🔗 [Linkedin](https://www.linkedin.com/in/-sumitsrivastava-/)
 
