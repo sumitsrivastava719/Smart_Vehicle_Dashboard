@@ -4,7 +4,7 @@ A Dual-Microcontroller Real-Time Automotive Monitoring System
 
 This project implements a smart vehicle dashboard capable of acquiring, transmitting, visualizing, and remotely monitoring real-time vehicle and environmental parameters. It uses STM32F407VGT6, ESP32, CAN bus, and FreeRTOS, along with multiple sensors to replicate the workflow of a modern automotive dashboard.
 
-🔧 System Overview
+# 🔧 System Overview
 
 The system follows a dual-MCU architecture for modularity and reliability:
 
@@ -28,7 +28,7 @@ Renders a full dashboard on an OLED display
 
 Uploads consolidated data to Blynk Cloud for remote monitoring
 
-📡 Sensors Used & Their Purpose
+# 📡 Sensors Used & Their Purpose
 
 Sensors connected to STM32
 
@@ -52,9 +52,13 @@ NEO-6M GPS	Provides live coordinates, speed, and satellite data.
 
 SSD1306 OLED	Displays real-time dashboard metrics.
 
+# ⚙️ Hardware Setup
+
+<img width="1897" height="1238" alt="Gemini_Generated_Image_obobm51zobm5" src="https://github.com/user-attachments/assets/02a7bdad-6376-4828-a46d-1d316e0165b2" />
 
 
-🖧 Communication & Interfaces
+
+# 🖧 Communication & Interfaces
 
 CAN Bus (STM32 ↔ ESP32)
 
@@ -81,7 +85,7 @@ UART → GPS
 Digital GPIO → Ultrasonic, DHT11, HC-89
 
 
-⚙️ FreeRTOS Task Architecture
+# ⚙️ FreeRTOS Task Architecture
 STM32 FreeRTOS Tasks
 
 Temperature reading (LM35)
@@ -109,7 +113,7 @@ OLED display update
 Cloud upload (Blynk)
 
 
-🔄 System Workflow
+# 🔄 System Workflow
 
 STM32 continuously reads all connected sensors using FreeRTOS tasks.
 
@@ -122,7 +126,7 @@ ESP32 merges both data streams and displays them on the OLED.
 ESP32 uploads full dashboard data to Blynk Cloud over Wi-Fi.
 
 
-📊 Project Results
+# 📊 Project Results
 
 Fully stable CAN communication between STM32 & ESP32
 
@@ -164,7 +168,7 @@ GPS: live position + speed
 
 
 
-📦 Components Used
+# 📦 Components Used
 
 STM32F407VGT6 Discovery Board
 
@@ -182,7 +186,7 @@ SSD1306 OLED Display (128×64)
 
 
 
-✔️ Conclusion
+# ✔️ Conclusion
 
 This project demonstrates a complete working automotive-style dashboard integrating multi-sensor data acquisition, CAN-based inter-MCU communication, real-time FreeRTOS scheduling, local OLED visualization, and cloud-based IoT monitoring.
 It provides a strong foundation for future upgrades such as touch-based UI, OBD-II integration, battery health monitoring, or predictive maintenance.
@@ -190,6 +194,6 @@ It provides a strong foundation for future upgrades such as touch-based UI, OBD-
 
 
 
-- 🐙 [GitHub Repository](https://github.com/sumitsrivastava719/Smart_Vehicle_Dashboard)
+- 🐙 [GitHub Repository](https://github.com/sumitsrivastava719)
 - 🔗 [Linkedin](https://www.linkedin.com/in/-sumitsrivastava-/)
 
