@@ -5,7 +5,9 @@ A Dual-Microcontroller Real-Time Automotive Monitoring System
 This project implements a smart vehicle dashboard capable of acquiring, transmitting, visualizing, and remotely monitoring real-time vehicle and environmental parameters. It uses STM32F407VGT6, ESP32, CAN bus, and FreeRTOS, along with multiple sensors to replicate the workflow of a modern automotive dashboard.
 
 🔧 System Overview
+
 The system follows a dual-MCU architecture for modularity and reliability:
+
 
 1. STM32F407VGT6 (Primary Controller)
 
@@ -14,6 +16,7 @@ Handles all real-time sensor acquisition
 Runs multiple FreeRTOS tasks
 
 Transmits processed data to ESP32 via CAN bus
+
 
 2. ESP32-WROOM-32 (Secondary Controller)
 
@@ -26,22 +29,37 @@ Renders a full dashboard on an OLED display
 Uploads consolidated data to Blynk Cloud for remote monitoring
 
 📡 Sensors Used & Their Purpose
+
 Sensors connected to STM32
-Sensor	Purpose
+
+
 LM35	Measures engine/ambient temperature (analog).
+
 HC-SR04 Ultrasonic	Measures obstacle distance (2–400 cm).
+
 HC-89 IR Speed Sensor	Measures rotational speed (RPM) for vehicle speed.
+
 MPU6050	Detects jerk, tilt, or sudden acceleration changes.
+
+
 Sensors connected to ESP32
-Sensor	Purpose
+
 DHT11	Measures cabin temperature and humidity.
+
 MQ-135	Measures air quality (CO₂, NH₃, NOx, smoke, pollutants).
+
 NEO-6M GPS	Provides live coordinates, speed, and satellite data.
+
 SSD1306 OLED	Displays real-time dashboard metrics.
+
+
+
 🖧 Communication & Interfaces
+
 CAN Bus (STM32 ↔ ESP32)
 
 Used for high-reliability data transmission between microcontrollers.
+
 CAN Frame IDs used:
 
 0x100 – Temperature
@@ -61,6 +79,7 @@ I2C → OLED, MPU6050
 UART → GPS
 
 Digital GPIO → Ultrasonic, DHT11, HC-89
+
 
 ⚙️ FreeRTOS Task Architecture
 STM32 FreeRTOS Tasks
@@ -89,6 +108,7 @@ OLED display update
 
 Cloud upload (Blynk)
 
+
 🔄 System Workflow
 
 STM32 continuously reads all connected sensors using FreeRTOS tasks.
@@ -100,6 +120,7 @@ ESP32 reads its own sensors (DHT11, MQ-135, GPS).
 ESP32 merges both data streams and displays them on the OLED.
 
 ESP32 uploads full dashboard data to Blynk Cloud over Wi-Fi.
+
 
 📊 Project Results
 
@@ -141,6 +162,8 @@ Air quality: fluctuating analog values
 
 GPS: live position + speed
 
+
+
 📦 Components Used
 
 STM32F407VGT6 Discovery Board
@@ -156,6 +179,8 @@ LM35, HC-SR04, HC-89, MPU6050
 MQ-135, DHT11, NEO-6M GPS
 
 SSD1306 OLED Display (128×64)
+
+
 
 ✔️ Conclusion
 
