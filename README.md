@@ -123,6 +123,7 @@ Used for high-reliability inter-controller communication.
 ---
 
 ## 📊 Project Results
+<img width="700" height="491" alt="image" src="https://github.com/user-attachments/assets/9d1aaf6e-ce34-4da1-a5f8-fb6a59336899" />
 
 ### ✔️ Achievements
 - Stable **CAN communication** between STM32 & ESP32  
